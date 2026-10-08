@@ -1,0 +1,23 @@
+{
+  "name": "claude-motion-graphic",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remotion motion graphics: animated lower third",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render LowerThird out/lower-third.mp4",
+    "render:alpha": "remotion render LowerThird out/lower-third.mov --codec=prores --prores-profile=4444 --pixel-format=yuva444p10le --props='{\"transparent\":true}'",
+    "still": "remotion still LowerThird out/lower-third.png --frame=150",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.534",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "^4.0.534"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}
